@@ -1,0 +1,518 @@
+/* External CSS style file */
+
+* {
+   box-sizing: border-box;
+   font-family: Arial, Helvetica, sans-serif;
+}
+/* html{
+  font-size: min(40px);
+} */
+
+
+body {
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
+   margin: 0px;
+   padding: 0px;
+}
+
+main {
+   flex: 1;
+}
+.dark-green-text{
+   color: thistle;
+}
+.active { /* for the javascript */
+   border-bottom: 2px solid rgb(0, 171, 6);
+   font-weight: bold;
+}
+
+footer {
+   background-color : #f5faf3;
+   font-family: Arial, Helvetica, sans-serif;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   text-align: center;
+   padding: 10px;
+}
+
+footer a {
+   text-decoration: none;
+   color: #185a03;
+}
+ .person:hover{
+   transform: scale(1.03);
+ }
+ .person-group{
+   display: flex;
+   flex-wrap: wrap;
+   min-width: 500px;
+ }
+ .hor-center{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   gap: 5px;
+ }
+ .form-group{
+   display: flex;
+   flex-direction: row;
+   gap: 10px;
+   margin: 10px;
+   align-items: center;
+   flex-wrap: wrap;
+ }
+table{
+   width: 100%;
+   border-radius: 10px;
+}
+th, td{
+   padding: 15px;
+   text-align: center;
+   gap: 20px;
+   /* border: 1px solid #157e19; */
+}
+.tr-data:hover{
+   background-color: #fafafa;
+}
+.tr-header{
+   background-color: #cfffbe;
+   color: #185a03;
+}
+.table-div{
+   width: 80%;
+}
+.content{
+   padding: 20px;
+}
+ .data-card:hover{
+   transform: scale(1.03);
+ }
+ .very-big-text{
+   font-size: 60px;
+ }
+ .text-center{
+   text-align: center;
+ }
+
+ .grey-text{
+   color: #4c4c4c;
+ }
+
+  .main-car-img{
+    border-radius: 20px;
+    width: min-content;
+    background-color: white;
+    width:  80vw;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  .main-car-img:hover{
+    transform: scale(1.03);
+  }
+    .container-home {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 20px;
+      padding-bottom: 100px;
+    }
+
+    .houseIcon {
+      padding-bottom: 20px;
+    }
+
+    .LGAicon {
+      padding-bottom: 30px;
+    }
+
+    .container-house {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .houseBars {
+      display: flex;
+      padding-top: 10px;
+      gap: 30px;
+    }
+
+    .barNumbers {
+      display: flex;
+      flex-direction: row;
+      gap: 30px;
+      font-style: italic;
+      color: #003f02;
+      padding-bottom: 10px;
+      
+    }
+
+    .barPeriod {
+      display: flex;
+      flex-direction: row;
+      gap: 25px;
+      color: #003e02;
+      padding-top: 20px;
+    }
+
+.containHouseBar {
+  width: 50px;
+  height: 180px;
+  margin: 0 5px;
+  position: relative;
+}
+
+.container-houseBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.houseBar1 {
+  width: 85%;
+  height: 0;
+  background-color: #c5ffc6;
+  position: absolute;
+  bottom: 0;
+  animation: fillUpPartial 2s ease-in-out forwards;
+}
+
+.houseBar2 {
+  width: 85%;
+  height: 0;
+  background-color: #c5ffc6;
+  position: absolute;
+  bottom: 0;
+  animation: fillUpFull 2s ease-in-out forwards;
+}
+
+.LGAbar1 {
+  width: 85%;
+  height: 0;
+  background-color: #c5ffc6;
+  position: absolute;
+  bottom: 0;
+  animation: fillUpPartial 2s ease-in-out forwards;
+}
+
+.LGAbar2 {
+  width: 85%;
+  height: 0;
+  background-color: #c5ffc6;
+  position: absolute;
+  bottom: 0;
+  animation: fillUpPartial 2s ease-in-out forwards;
+}
+
+@keyframes fillUpFull {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 90%;
+  }
+}
+
+@keyframes fillUpPartial {
+  from {
+    height: 0;
+  }
+
+  to {
+    height: 70%;
+  }
+}
+
+/* .form1A {
+  display: flex;
+  padding: 0px;
+  flex-direction: column;
+} */
+@media only screen and (max-device-width: 1000px) {
+  .whole-table{
+    display: none;
+  }
+  .whole-card{
+    display: block;
+    width: 90%;
+  }
+  .card-holder{
+    display: flex;
+    flex-direction: column;
+    gap:200px;
+  }
+  label{
+    font-size: 30px;
+  }
+  input{
+    font-size: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+ 
+  input:focus {
+    border-color: #185a03;
+  }
+  select {
+    font-size: 30px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+ 
+  select:focus {
+    border-color: #185a03;
+  }
+  button {
+    font-size: 30px;
+    padding: 5px 10px;
+    background-color: #bbf0aa;
+    color: #185a03;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+  button:hover {
+    background-color: #e4fbe5;
+  }
+  h1{
+    font-size: 60px;
+  }
+  .no-data-text{
+    color: #9b9b9b;
+    font-size: 30px;
+  }
+  .error-msg{
+    color: rgb(0, 38, 9);
+    font-size: 20px;
+  }
+  .adaptive-text{
+    font-size: 30px;
+  }
+  .person{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #e4fbe5;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+  .data-card{
+    background-color: #e4fbe5;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+  }
+}
+@media only screen and (min-device-width: 1000px) {
+  .whole-table{
+    display: block;
+    width: 90%;
+  }
+  .whole-card{
+    display: none;
+  }
+  .card-holder{
+    display: flex;
+    gap:200px;
+  }
+  label{
+    font-size: 15px;
+  }
+  input{
+    font-size: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+ 
+  input:focus {
+    border-color: #185a03;
+  }
+  select {
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+ 
+  select:focus {
+    border-color: #185a03;
+  }
+  button {
+    font-size: 15px;
+    padding: 5px 10px;
+    background-color: #bbf0aa;
+    color: #185a03;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+ 
+  button:hover {
+    background-color: #e4fbe5;
+  }
+  .no-data-text{
+    color: #9b9b9b;
+  }
+  .error-msg{
+    color: rgb(0, 38, 9);
+  }
+  .person{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #e4fbe5;
+    margin-left: 20px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    max-width: 500px;
+    text-wrap: wrap;
+  }
+  .data-card{
+    background-color: #e4fbe5;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+}
+@media only screen and (max-device-width: 1250px) {
+  .menu {
+    display: none;
+  }
+  .topnav {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+ }
+  .adapt-logo{
+    width: 500px;
+    height: 60px;
+  }
+  .phone-menu{
+    display: flexbox;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+  }
+  .phone-menu a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    width: 100%;
+    border-bottom: 2px solid rgb(0, 171, 6);
+  }
+}
+@media only screen and (min-device-width: 1250px) {
+  .menu {
+    display: flex;
+    padding-right: 40px;
+    gap: 50px;
+  }
+  .menu a {
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    padding-bottom: 10px;
+  }
+  
+  .menu a:hover {
+    border-bottom: 2px solid rgb(0, 171, 6);
+    padding-bottom: 10px;
+  }
+  .topnav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    
+ }
+ .phone-menu{
+  display: none;
+ }
+}
+.phone-card{
+  margin: 10px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flexbox;
+  flex-direction: column;
+  min-width: 90%;
+}
+.lg-text-2{
+  font-size: 30px;
+}
+.persona-img{
+  border-radius: 150px;
+  border: solid;
+  border-color: seagreen;
+  border-width: 5px;
+}
+.show-result{
+  font-style: italic;
+  color: #717171;
+}
+.width-100{
+  width: 100%;
+}
+.form-control{
+  width: fit-content;
+}
+.weird-box{
+  width: 250px;
+  min-width: fit-content;
+}
+
+select[multiple] option {
+  padding: 8px;
+  margin: 2px;
+  border: 1px solid transparent;
+  background-color: #f5faf3;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  overflow: hidden;
+}
+
+
+
